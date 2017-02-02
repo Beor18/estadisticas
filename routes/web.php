@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Rutas del controlador para estadisticas
+Route::get('/', 'TestController@index');

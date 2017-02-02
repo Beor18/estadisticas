@@ -92,7 +92,7 @@
                        
                         <!-- Creacion de estadisticas. Problema: Variable indefinida cuando quiero renderizar con $mivariable->render() , cuando la variable ya esta definida desde el controlador TestController.php -->
 
-                        {!! Charts::create('area', 'highcharts')->labels(['Diciembre 2016', 'Enero 2017', 'Febrero 2017'])->values([10, 20, 2])->render() !!}
+                        {!! $chart->render() !!}
                     </div>
                 </div>
 
